@@ -855,6 +855,27 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
 /* ═══════════════════════════════════════
    SERVICE TABS
 ═══════════════════════════════════════ */
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  opacity: 2;
+}
+
+.brand-item img {
+  max-width: 100px;
+  height: auto;
+ 
+  transition: 0.3s;
+}
+
+.brand-item img:hover {
+  
+  transform: scale(1.1);
+}
 .tab-nav{display:flex;gap:8px;justify-content:center;margin-bottom:40px;flex-wrap:wrap;}
 .tab-btn{
   padding:11px 32px;border-radius:50px;
@@ -903,7 +924,7 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
 /* ═══════════════════════════════════════
    AREAS WE SERVE
 ═══════════════════════════════════════ */
-#areas{background:var(--navy);position:relative;overflow:hidden;}
+#areas{background:rgb(27, 90, 132);position:relative;overflow:hidden;}
 #areas::before{
   content:'';position:absolute;inset:0;
   background:radial-gradient(ellipse 70% 50% at 30% 50%,rgba(14,165,233,0.07) 0%,transparent 60%);
@@ -1090,15 +1111,41 @@ footer{background:var(--navy-dark);border-top:1px solid rgba(255,255,255,0.06);}
   <div class="container">
     <div class="brands-strip">
       <p class="brands-label">Authorized Spare Parts for All Major Brands</p>
+
       <div class="brands-grid reveal">
-        <div class="brand-item">LG</div>
-        <div class="brand-item">SAMSUNG</div>
-        <div class="brand-item">DAIKIN</div>
-        <div class="brand-item">VOLTAS</div>
-        <div class="brand-item">BLUE STAR</div>
-        <div class="brand-item">HITACHI</div>
-        <div class="brand-item">CARRIER</div>
-        <div class="brand-item">GODREJ</div>
+
+        <div class="brand-item">
+          <img src="images/lg.png" alt="LG">
+        </div>
+
+        <div class="brand-item">
+          <img src="images/samsung.png" alt="Samsung">
+        </div>
+
+        <div class="brand-item">
+          <img src="images/daikin.png" alt="Daikin">
+        </div>
+
+        <div class="brand-item">
+          <img src="images/voltas.png" alt="Voltas">
+        </div>
+
+        <div class="brand-item">
+          <img src="images/bluestar.png" alt="Blue Star">
+        </div>
+
+        <div class="brand-item">
+          <img src="images/hitachi.png" alt="Hitachi">
+        </div>
+
+        <div class="brand-item">
+          <img src="images/carrier.png" alt="Carrier">
+        </div>
+
+        <div class="brand-item">
+          <img src="images/godrej.png" alt="Godrej">
+        </div>
+
       </div>
     </div>
   </div>
